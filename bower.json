@@ -1,7 +1,7 @@
 {
   "name": "angular-scroll-top",
   "version": "1.0.0",
-  "main": "./angular-scroll-top.js",
+  "main": "./src/angular-scroll-top.js",
   "dependencies": {
     "angular": "1.2.26"
   }
