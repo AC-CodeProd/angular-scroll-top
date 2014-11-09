@@ -1,7 +1,7 @@
 (function(window, angular, undefined) {
     'use strict';
-    var ngngScrollTopModule = angular.module('ngScrollTop', ['ng']);
-    ngngScrollTopModule.directive('ngScrollTop', function() {
+    var ngScrollTopModule = angular.module('ngScrollTop', ['ng']);
+    ngScrollTopModule.directive('ngScrollTop', function() {
         return {
             restrict: 'AE',
             replace: false,
