@@ -1,0 +1,26 @@
+.scroll {
+    &-top {
+        position: fixed;
+        z-index: @z-index-scroll;
+        right: 30px;
+        bottom: 30px;
+        height: 40px;
+        padding: 0;
+        cursor: pointer;
+        transition: background .2s linear;
+        color: @color-scroll;
+        border: 2px solid @color-scroll-border;
+        background-color: @color-scroll-background;
+        i {
+            color: @color-scroll;
+        }
+    }
+    &-link {
+        font-weight: bold;
+        line-height: 37px;
+        margin: 16px;
+        list-style: none;
+        text-align: center;
+        text-decoration: initial;
+    }
+}

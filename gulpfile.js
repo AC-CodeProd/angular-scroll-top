@@ -4,7 +4,8 @@ var plugins = require("gulp-load-plugins")({
     replaceString: /\bgulp[\-.]/
 });
 var pathsSrc = {
-    less: ['src/*.less'],
+    less: ['src/less/*.less','!src/less/components/*.less','!src/less/utilities/*.less'],
+    lessWatch: ['src/less/*.less'],
     scripts: ['src/*.js']
 };
 gulp.task('less', function() {
@@ -14,6 +15,7 @@ gulp.task('less', function() {
         .pipe(plugins.autoprefixer("last 8 version", "> 1%", "ie 8", "ie 7"), {
             cascade: true
         })
+        .pipe(plugins.minifyCss())
         .pipe(gulp.dest('dist'));
 });
 gulp.task('scripts', function() {
