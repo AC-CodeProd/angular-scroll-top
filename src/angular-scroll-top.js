@@ -4,7 +4,7 @@
     ngScrollTopModule.directive('ngScrollTop', function() {
         return {
             restrict: 'AE',
-            replace: false,
+            replace: true,
             template: '<div class="scroll-top" id="scroll-top" ng-class="scrollTopColor" >' + '<a id="scroll-link" class="scroll-link" title="Revenir en haut de page">' + '<i class="fa fa-arrow-up scroll-icon"></i>' + '</a>' + '</div>',
             link: function(scope, $elm, attrs) {
                 var _window = angular.element(window);
